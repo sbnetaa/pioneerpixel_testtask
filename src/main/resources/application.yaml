@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: pionerpixel-testtask
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pioneerpixel-db
+    username: postgres
+    password: newpassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  redis:
+    host: localhost
+    port: 6379
+  elasticsearch:
+    uris: http://localhost:9200
+server:
+  port: 8080
+app:
+  jwtSecret: elephantelephantelephantelephantelephantelephantelephant
+  jwtExpirationInMs: 86400000 # 24 часа
